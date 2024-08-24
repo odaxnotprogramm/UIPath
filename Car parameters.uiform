@@ -1,0 +1,53 @@
+﻿{
+  "Metadata": {
+    "Id": "37615e3e-62bb-444f-a253-7d9f136e9172",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "Car parameters",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Enter Car Brand",
+        "tableView": true,
+        "key": "CarBrand",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Enter Car Model",
+        "tableView": true,
+        "key": "CarModel",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Enter Car Min Price",
+        "tableView": true,
+        "key": "CarMinPrice",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Enter Car Max Price",
+        "tableView": true,
+        "key": "enterCarMaxPrice",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}

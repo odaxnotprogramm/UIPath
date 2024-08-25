@@ -1,0 +1,81 @@
+﻿{
+  "Metadata": {
+    "Id": "043d2808-a8c3-4e0d-87b9-fcfa1936a0c4",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "ResultFormCarParameters",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "html": "<p><strong>The most expensive car parameters:</strong></p>",
+        "label": "Content",
+        "refreshOnChange": false,
+        "key": "content",
+        "type": "content",
+        "input": false,
+        "tableView": false
+      },
+      {
+        "label": "Name",
+        "tableView": true,
+        "key": "CarMaxPriceName",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Price",
+        "tableView": true,
+        "key": "CarMaxPrice",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Expensive car",
+        "action": "event",
+        "showValidations": false,
+        "tableView": false,
+        "key": "ExpensiveCar",
+        "type": "button",
+        "input": true
+      },
+      {
+        "html": "<p><strong>The cheapest car parameters:</strong></p>",
+        "label": "Content",
+        "refreshOnChange": false,
+        "key": "content1",
+        "type": "content",
+        "input": false,
+        "tableView": false
+      },
+      {
+        "label": "Name",
+        "tableView": true,
+        "key": "CarMinPriceName",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Price",
+        "tableView": true,
+        "key": "CarMinPrice",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Cheap Car",
+        "action": "event",
+        "showValidations": false,
+        "tableView": false,
+        "key": "CheapCar",
+        "type": "button",
+        "input": true
+      }
+    ]
+  }
+}

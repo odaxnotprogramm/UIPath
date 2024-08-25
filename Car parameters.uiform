@@ -13,6 +13,15 @@
   "Data": {
     "components": [
       {
+        "html": "<p><strong>Enter car parameters:</strong></p>",
+        "label": "Content",
+        "refreshOnChange": false,
+        "key": "content",
+        "type": "content",
+        "input": false,
+        "tableView": false
+      },
+      {
         "label": "Enter Car Brand",
         "tableView": true,
         "key": "CarBrand",
@@ -41,12 +50,14 @@
         "input": true
       },
       {
-        "type": "button",
-        "label": "Submit",
-        "key": "submit",
+        "label": "Find",
+        "showValidations": false,
         "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "type": "button",
         "input": true,
-        "tableView": false
+        "saveOnEnter": false
       }
     ]
   }

@@ -1,9 +1,9 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="VisitMinPriceCarTrigger" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="VisitMinPriceCarTrigger" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="TriggerEventArgs" Type="InArgument(ufa:FormInfoTriggerEventArgs)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>653,730</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>653,911</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -114,25 +114,30 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="VisitMinPriceCarTrigger" sap:VirtualizedContainerService.HintSize="512,665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="VisitMinPriceCarTrigger" sap:VirtualizedContainerService.HintSize="512,846" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ufa:FormTriggerActivity x:TypeArguments="ufa:FormInfoTriggerEventArgs" MessageId="{x:Null}" Tag="{x:Null}" DisplayName="Form Event Trigger" Enabled="True" Event="click.CheapCar" FormId="043d2808-a8c3-4e0d-87b9-fcfa1936a0c4" sap:VirtualizedContainerService.HintSize="450,192" sap2010:WorkflowViewState.IdRef="FormTriggerActivity`1_3" SchedulingMode="Sequential" TriggerId="51ffb6ba-ca46-4a25-bc94-a4bdb0903f82" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: av.by" sap:VirtualizedContainerService.HintSize="450,385" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3094174a-8987-4032-b76a-49030f6252a3" Version="V2">
+    <ufa:FormTriggerActivity x:TypeArguments="ufa:FormInfoTriggerEventArgs" MessageId="{x:Null}" Tag="{x:Null}" DisplayName="Form Event Trigger" Enabled="True" Event="click.CheapCar" FormId="043d2808-a8c3-4e0d-87b9-fcfa1936a0c4" sap:VirtualizedContainerService.HintSize="450,191" sap2010:WorkflowViewState.IdRef="FormTriggerActivity`1_3" SchedulingMode="Sequential" TriggerId="51ffb6ba-ca46-4a25-bc94-a4bdb0903f82" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: av.by" sap:VirtualizedContainerService.HintSize="450,567" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3094174a-8987-4032-b76a-49030f6252a3" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,105" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,287" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Reset Result Form" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Result.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
